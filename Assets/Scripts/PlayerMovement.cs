@@ -6,6 +6,7 @@ public class PlayerMovement : MonoBehaviour
 {
     private CharacterController2D controller;
     private Animator animator;
+    private Rigidbody2D rb;
     public float speed = 40f;
 
     float horizontalMove;
@@ -18,6 +19,7 @@ public class PlayerMovement : MonoBehaviour
     {
         animator = GetComponent<Animator>();
         controller = GetComponent<CharacterController2D>();
+        rb = GetComponent<Rigidbody2D>();
     }
 
     // Update is called once per frame
@@ -36,6 +38,7 @@ public class PlayerMovement : MonoBehaviour
     {
         controller.Move(horizontalMove * Time.fixedDeltaTime, false, jump);
         jump = false;
-        
+        if(controller.m_Grounded && rb.velocity.y == 0) animator.SetBool("InAir", false);
+        else animator.SetBool("InAir", true);
     }
 }
