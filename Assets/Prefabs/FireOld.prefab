@@ -11,7 +11,6 @@ GameObject:
   - component: {fileID: 6083235391696173145}
   - component: {fileID: 6083235391696173144}
   - component: {fileID: 6083235391430618873}
-  - component: {fileID: 6083235391430618872}
   m_Layer: 3
   m_Name: FireOld
   m_TagString: Untagged
@@ -217,19 +216,3 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!111 &6083235391430618872
-Animation:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6083235391696173150}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Animation: {fileID: 7400000, guid: d438c0c9de6dc06438115c68e4e501ae, type: 2}
-  m_Animations:
-  - {fileID: 7400000, guid: b425bc404a1a441428ead1f5ce4634a2, type: 2}
-  m_WrapMode: 0
-  m_PlayAutomatically: 1
-  m_AnimatePhysics: 0
-  m_CullingType: 0
