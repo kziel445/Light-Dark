@@ -467,6 +467,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Torch
       objectReference: {fileID: 0}
+    - target: {fileID: 7010757455626322975, guid: 702c7202f9a814e49a9706fc42e8fe6c, type: 3}
+      propertyPath: m_SortingOrder
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 9030567643879320732, guid: 702c7202f9a814e49a9706fc42e8fe6c, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: -29.737095
