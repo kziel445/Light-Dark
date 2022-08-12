@@ -40,7 +40,7 @@ public class PlayerMovement : MonoBehaviour
     {
         controller.Move(horizontalMove * Time.fixedDeltaTime, false, jump);
         jump = false;
-        if(controller.m_Grounded && rb.velocity.y == 0) animator.SetBool("InAir", false);
+        if(controller.m_Grounded) animator.SetBool("InAir", false);
         else animator.SetBool("InAir", true);
     }
     public void FootStep()
