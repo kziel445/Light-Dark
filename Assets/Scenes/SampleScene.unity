@@ -1390,8 +1390,9 @@ GameObject:
   - component: {fileID: 1515090181}
   - component: {fileID: 1515090183}
   - component: {fileID: 1515090182}
+  - component: {fileID: 1515090184}
   m_Layer: 5
-  m_Name: Text (TMP)
+  m_Name: Points
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1516,6 +1517,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1515090180}
   m_CullTransparentMesh: 1
+--- !u!114 &1515090184
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1515090180}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0e9bf944659d9624a82dbfd47e3a6e0e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  LightsPath: {fileID: 697481977}
 --- !u!4 &1604187360 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5931210541601749631, guid: 66dbe706e28c4c842b97526490d6a8bf, type: 3}

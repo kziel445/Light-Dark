@@ -11,7 +11,7 @@ public class TorchController : MonoBehaviour
     void Start()
     {
         lantern = transform.GetChild(0);
-        ChangeState();
+        ChangeLanternState();
     }
 
     // Update is called once per frame
@@ -22,10 +22,20 @@ public class TorchController : MonoBehaviour
             ChangeState();
         }
     }
-    private void ChangeState()
+    private void ChangeLanternState()
     {
         lantern.gameObject.SetActive(actualLanternState);
+        
         actualLanternState = !actualLanternState;
+    }
+    private void ChangeState()
+    {
+        ChangePoints();
+        ChangeLanternState();
+    }
+    public void ChangePoints()
+    {
+        Points.GetInstance().ChangePointsText(actualLanternState);
     }
     private void OnEnable()
     {
